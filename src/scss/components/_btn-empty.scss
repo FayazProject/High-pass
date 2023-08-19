@@ -1,0 +1,21 @@
+.btn-empty {
+  border: 3px solid var(--orange);
+  color: var(--white);
+  background-color: transparent;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+  &:focus {
+    background-color: #BC572B;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: var(--orange);
+  }
+
+  &:active {
+    border: 3px solid #CE4307;
+    background-color: #CE4307;
+    outline: none;
+  }
+}

@@ -1,0 +1,39 @@
+<section>
+  <div class="container contacts">
+    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts__container">
+      <div class="contacts__map" id="map">
+        <div class="contacts__map-info js-menu-info">
+          <div class="contacts__info-contant">
+            <button class="contacts__close-btn btn-close btn-reset js-contacts-close" type="button" aria-label="Закрыть панель информации">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#999999"/><rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white"/><rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)" fill="white"/></svg>
+            </button>
+            <h3 class="contacts__info-title">Студия «High pass»</h3>
+            <p class="contacts__adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82 <span><a class="phone contacts__tel" href="tel:+749542423532">+7 495 424&#9135;23&#9135;532</a></span></p>
+            <a class="phone contacts__tel" href="tel:+749542423532">+7 495 424-23-532</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__form-wrapper">
+        <h3 class="contacts__form-title">Оставить заявку</h3>
+        <p class="contacts__form-descr">Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия</p>
+        <form class="contacts__form js-form2" action="https://jsonplaceholder.typicode.com/posts" method="POST" aria-label="Форма заявки">
+          <label aria-label="Ввести имя">
+            <input type="text" name="Name" class="contacts__input input-light input-reset" placeholder="Имя">
+          </label>
+
+          <label class="contacts__label-email" aria-label="Ввести электронную почту">
+            <input type="email" name="E-mail" class="contacts__input input-light input-reset js-email2" placeholder="Email">
+          </label>
+
+          <label aria-label="Ввести комментарий">
+            <textarea name="comments" cols="15" rows="5" class="contacts__input input-light contacts__textarea input-reset" placeholder="Комментарий" style="resize: none;"></textarea>
+          </label>
+
+          <button type="submit" class="btn-reset contacts__btn btn-fill" aria-label="Отправить форму заявки">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

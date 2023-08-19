@@ -1,0 +1,22 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/logo";
+@import "./components/menu-link";
+@import "./components/btn-fill";
+@import "./components/btn-empty";
+@import "./components/input-dark";
+@import "./components/input-light";
+@import "./components/btn-close";
+@import "./components/phone";
+@import "./components/superscript";
+@import "./components/header";
+@import "./components/works";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/contacts";
+@import "./components/footer";

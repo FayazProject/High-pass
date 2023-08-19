@@ -1,0 +1,16 @@
+.menu-link {
+  &:focus {
+    background-color: #BC572B;
+    outline: none;
+  }
+
+  &:hover {
+    color: var(--orange);
+    background-color: transparent;
+  }
+
+  &:active {
+    color: #CE4307;
+    background-color: transparent;
+  }
+}

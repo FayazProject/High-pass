@@ -1,0 +1,6 @@
+.logo {
+  &:focus {
+    outline: 1px solid var(--orange);
+    outline-offset: 4px;
+  }
+}

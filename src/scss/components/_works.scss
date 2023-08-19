@@ -1,0 +1,222 @@
+.works {
+  max-width: var(--container-full-width);
+  padding: 41px 0 68px;
+  background-color: var(--white);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.card-1 {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/1920-edit/Works-1-1920.jpg");
+  background-repeat: no-repeat;
+  background-color: #4A4A4A;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+    padding: 60px 58px 59px;
+  }
+
+  &__subtitle {
+    margin-bottom: 4px;
+    margin-left: 1px;
+    @include roboto(400);
+    font-size: var(--font-reg);
+    line-height: 1;
+    color: var(--white);
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    @include ttfn (700);
+    font-size: 36px;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  &__btn {
+    max-width: max-content;
+    min-height: 50px;
+    margin-left: 2px;
+    padding: 15px 22px;
+    @include roboto(700);
+    font-size: var(--font-reg);
+    line-height: 19px;
+    text-align: center;
+  }
+
+  &::after {
+    content: "#мастеркласс";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    max-width: 600px;
+    min-height: 29px;
+    padding: 8px 15px;
+    @include roboto (400);
+    font-size: var(--font-small);
+    color: var(--white);
+    background-color: var(--dark);
+  }
+}
+
+.card-2 {
+  width: 100%;
+
+  &__title {
+    margin-bottom: 18px;
+    @include ttfn(700);
+    font-size: var(--font-large);
+    line-height: 25px;
+    color: var(--dark);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__list-item:first-child {
+    grid-column: span 2;
+  }
+
+  &__image {
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 1320px) {
+  .works {
+    max-width: 1320px;
+    padding: 34px 0 68px;
+  }
+
+  .card-1 {
+    background-image: url("../img/1024-edit/Works-1-1024.jpg");
+
+    &__container {
+      padding: 60px 28px 30px;
+    }
+
+    &__subtitle {
+      margin-bottom: 9px;
+    }
+
+    &__title {
+      margin-left: 1px;
+      font-size: 34px;
+      line-height: 34px;
+    }
+  }
+
+  .card-2 {
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .works {
+    max-width: 1024px;
+    padding-top: calc(var(--nav-menu) + 36px);
+    padding-bottom: 68px;
+  }
+
+  .card-1 {
+    background-image: url("../img/768-edit/Works-1-768.jpg");
+
+    &__subtitle {
+      margin-bottom: 17px;
+    }
+
+    &__title {
+      line-height: 90%;
+    }
+  }
+
+  .card-2 {
+    &__title {
+      margin-bottom: 19px;
+      font-size: 22px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .works {
+    max-width: 100%;
+    padding-top: calc(var(--nav-menu) + 30px);
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .card-1 {
+    &__subtitle {
+      margin-bottom: 10px;
+      font-size: var(--font-small);
+      line-height: var(--font-small);
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      font-size: var(--font-large);
+      line-height: 110%;
+    }
+
+    &__btn {
+      min-height: 40px;
+      padding: 13px 22px;
+      font-size: var(--font-small);
+      line-height: var(--font-small);
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .works {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+  }
+
+  .card-1 {
+    background-image: url("../img/320-edit/Works-1-320.jpg");
+
+    &__container {
+      min-height: 422px;
+      padding: 29px 28px;
+    }
+
+    &::after {
+      top: 7px;
+      right: 5px;
+      max-width: 268px;
+      min-height: 14px;
+      padding: 4px 7px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .card-2 {
+    &__title {
+      margin-bottom: 17px;
+      font-size: 18px;
+      line-height: 104%;
+    }
+  }
+}

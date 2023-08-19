@@ -1,0 +1,32 @@
+.input-light {
+  border: transparent;
+  @include roboto (400);
+  font-size: var(--font-reg);
+  line-height: var(--font-reg);
+  color: var(--dark);
+  background-color: #E9E9E9;
+  transition: border-color 0.1s;
+
+  &::placeholder {
+    color: #999;
+    transition: color 0.3s;
+  }
+
+  &:focus {
+    border: 1px solid var(--orange);
+    outline: none;
+  }
+
+  &:hover {
+    border: transparent;
+    outline: none;
+
+    &::placeholder {
+      color: var(--orange);
+    }
+  }
+
+  &.is-invalid {
+    border: 1px solid var(--invalid-light);
+  }
+}

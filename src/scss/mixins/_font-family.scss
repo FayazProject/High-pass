@@ -1,0 +1,9 @@
+@mixin roboto($weight) {
+  font-family: var(--roboto);
+  font-weight: #{$weight};
+}
+
+@mixin ttfn($weight) {
+  font-family: var(--ttfn);
+  font-weight: #{$weight};
+}

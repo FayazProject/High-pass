@@ -1,0 +1,69 @@
+/* stylelint-disable */
+
+@mixin burger {
+  --burger-width: 20px;
+  --burger-height: 18px;
+  --burger-line-height: 2px;
+
+  position: relative;
+  z-index: 3;
+  border: none;
+  padding: 0;
+  width: var(--burger-width);
+  height: var(--burger-height);
+  color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+
+  &::before {
+    width: 100%;
+    top: 0;
+  }
+
+  &::after {
+    width: 50%;
+    top: calc(100% - var(--burger-line-height));
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  & .btn-close {
+    display: none;
+  }
+
+  &--active {
+    width: 18px;
+    height: 18px;
+
+    .btn-close {
+      display: block;
+      width: 25px;
+      height: 20px;
+    }
+
+    &::before,
+    &::after,
+    .burger__line {
+      width: 0;
+    }
+  }
+}

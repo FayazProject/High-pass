@@ -1,0 +1,37 @@
+.input-dark {
+  border: 1px solid transparent;
+  @include roboto (400);
+  font-size: var(--font-reg);
+  line-height: 16px;
+  color: var(--white);
+  background-color: #4a4a4a;
+  transition: border-color 0.3s;
+
+  &::placeholder {
+    color: #CACACA;
+    transition: color 0.3s;
+  }
+
+  &:focus {
+    border: 1px solid var(--orange);
+    outline: none;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    outline: none;
+
+    &::placeholder {
+      color: var(--orange);
+    }
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &.is-invalid {
+    border: 1px solid var(--invalid-dark);
+  }
+}

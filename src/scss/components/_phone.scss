@@ -1,0 +1,15 @@
+.phone {
+  @include ttfn (400);
+  font-size: var(--font-reg);
+  line-height: 16px;
+  color: var(--orange);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/call-icon.svg) top 50% left 0 / cover no-repeat;
+    vertical-align: middle;
+  }
+}

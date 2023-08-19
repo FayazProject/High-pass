@@ -1,0 +1,21 @@
+.btn-fill {
+  color: var(--white);
+  background-color: var(--orange);
+  outline: none;
+  transition: color 0.3s, background-color 0.3s;
+
+  &:focus {
+    outline: 3px solid #CE4307;
+    outline-offset: -3px;
+  }
+
+  &:hover {
+    background-color: #BC572B;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #CE4307;
+    outline: none;
+  }
+}
